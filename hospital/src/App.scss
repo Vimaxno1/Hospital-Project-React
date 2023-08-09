@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #f4f6f9;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: 'Montserrat', Arial, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+body {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.main {
+  position: relative;
+  background: #fff;
+}
