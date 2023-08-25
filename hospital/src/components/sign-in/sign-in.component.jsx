@@ -49,7 +49,6 @@ class SignInPage extends React.Component {
                     <FormInput
                       type="Email"
                       placeholder="Enter User Email"
-                      value={this.state.email}
                       handleChange={this.handleChange}
                       required
                     />
@@ -61,7 +60,6 @@ class SignInPage extends React.Component {
                     <FormInput
                       type="password"
                       placeholder="Password"
-                      value={this.state.password}
                       handleChange={this.handleChange}
                       required
                     />
@@ -86,7 +84,6 @@ class SignInPage extends React.Component {
     );
   }
 }
-
 const mapDispatchToProps = (dispatch) => ({
   emailSignInStart: (email, password) =>
     dispatch(emailSignInStart({ email, password })),
