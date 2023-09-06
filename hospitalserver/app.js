@@ -9,11 +9,18 @@ const csrf = require('csurf');
 const flash = require('connect-flash');
 const Admin = require('./models/admin');
 const multer = require('multer');
+const cors = require('cors');
 
 const app = express();
 const myStore = new SequelizeStore({
   db: sequelize,
 });
+
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+  })
+);
 
 const csrfProtection = csrf();
 
